@@ -1,0 +1,287 @@
+/*
+========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+	background: #293f50;
+	color: #888;
+	font: 300 16px/22px 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.midsection::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+	background-color: #293f50;
+}
+
+.midsection::-webkit-scrollbar {
+	width: 8px;
+	background-color: #293f50;
+}
+
+.midsection::-webkit-scrollbar-thumb {
+	background-color: rgb(5, 156, 226);
+}
+
+/* .content::-moz-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+	background-color: #648880;
+}
+
+.content::-moz-scrollbar {
+	width: 10px;
+	background-color: #648880;
+}
+
+.content::-moz-scrollbar-thumb {
+	background-color: #000000;
+} */
+
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 80px auto 44px;
+	height: 100vh;
+}
+
+.header {
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.midsection {
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	overflow-y: auto;
+}
+
+.content {
+	grid-column: 2 / 3;
+	max-width: 960px;
+}
+
+.footer {
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1,
+h2,
+h3,
+h4 {
+	/* color: #648880; */
+	color: rgb(5, 156, 226);
+}
+
+h1,
+h3,
+h4,
+h5,
+p {
+	margin-bottom: 22px;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+}
+
+h2,
+i {
+	font-size: 24px;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	color: rgba(0, 174, 255);
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+
+cite,
+em {
+	font-style: italic;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+	color: rgb(5, 156, 226);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #dfe2e5;
+}
+
+/* p a {
+	border-bottom: 1px solid #dfe2e5;
+} */
+
+/* .primary-header a,
+.primary-footer a {
+	color: #fff;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+	color: #648880;
+} */
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+	border-top: 5px solid rgb(5, 156, 226);
+}
+
+.logo {
+	font-size: 40px;
+	letter-spacing: 0.5px;
+	line-height: 44px;
+	padding: 15px;
+	font: 'Helvetica Neue', Helvetica, Arial;
+}
+
+/*
+	========================================
+	Navigation
+	========================================
+*/
+
+.mainnav {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-right: 20px;
+}
+
+.mainnav li {
+	margin: 20px 10px;
+}
+
+.mainnav li:last-child {
+	margin-right: 0;
+}
+
+/*
+  ========================================
+  Midsection
+  ========================================
+*/
+
+.midsection {
+	background: linear-gradient(rgba(0, 174, 255, 0.3), rgba(0, 174, 255, 0.3)), url('../media/img/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+  ========================================
+  Content
+  ========================================
+*/
+
+.content {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.article {
+	min-height: calc(100vh - 112px);
+	background-color: rgba(255, 255, 255, 0.7);
+	margin: 20px;
+	padding: 10px;
+}
+
+.article:first-child {
+	margin-top: 0;
+}
+
+.article:last-child {
+	margin-bottom: 0;
+}
+
+.article h1,
+.item-icon {
+	text-align: center
+}
+
+.item-icon {
+	display: block;
+	color: #dfe2e5;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 200px;
+	margin: 0 auto;
+	font-size: 100px;
+	border-radius: 50%;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer {
+	color: rgb(5, 156, 226);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid rgb(5, 156, 226);
+	overflow: hidden;
+}
+
+/* .footer p {
+	margin-bottom: 0;
+} */
+
+.social-links li {
+	display: inline-block;
+	margin-right: 20px;
+}
