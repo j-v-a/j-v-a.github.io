@@ -36,20 +36,6 @@ ul {
 	-webkit-padding-start: 0;
 }
 
-/* .content::-moz-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
-	background-color: #648880;
-}
-
-.content::-moz-scrollbar {
-	width: 10px;
-	background-color: #648880;
-}
-
-.content::-moz-scrollbar-thumb {
-	background-color: #000000;
-} */
-
 /*
   ========================================
   Layout
@@ -162,20 +148,6 @@ a:hover {
 	color: #dfe2e5;
 }
 
-/* p a {
-	border-bottom: 1px solid #dfe2e5;
-} */
-
-/* .primary-header a,
-.primary-footer a {
-	color: #fff;
-}
-
-.primary-header a:hover,
-.primary-footer a:hover {
-	color: #648880;
-} */
-
 /*
   ========================================
   Header
@@ -243,7 +215,7 @@ a:hover {
 }
 
 .article {
-	min-height: calc(100vh - 112px);
+	min-height: calc(100vh - 112px - 74px);
 	background-color: rgba(255, 255, 255, 0.8);
 	margin: 20px;
 	padding: 10px;
