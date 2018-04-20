@@ -126,6 +126,25 @@
     </footer>
 
   </div>
+
+  <!-- small script to fix address bar height to be included in vh -->
+  <script type="text/javascript" charset="utf-8">
+    (function () {
+      function size() {
+        if (
+          /android|webos|iphone|ipad|ipod|blackberry|nokia|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i
+          .test(navigator.userAgent.toLowerCase())) {
+          var theMinHeight = Math.min(document.documentElement.clientHeight, window.screen.height, window.innerHeight);
+          $('html body #article').css('height', theMinHeight);
+        }
+      }
+      window.addEventListener('resize orientationchange', function () {
+        size();
+      }, false);
+      size();
+    }());
+  </script>
+
 </body>
 
 </html>

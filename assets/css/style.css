@@ -4,6 +4,12 @@
   ========================================
 */
 
+* {
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	-webkit-padding-start: 0;
+}
+
 body {
 	background: #293f50;
 	color: #888;
@@ -29,26 +35,6 @@ ul {
 .midsection::-webkit-scrollbar-thumb {
 	background-color: rgb(5, 156, 226);
 }
-
-* {
-	-webkit-margin-after: 0;
-	-webkit-margin-before: 0;
-	-webkit-padding-start: 0;
-}
-
-/* .content::-moz-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
-	background-color: #648880;
-}
-
-.content::-moz-scrollbar {
-	width: 10px;
-	background-color: #648880;
-}
-
-.content::-moz-scrollbar-thumb {
-	background-color: #000000;
-} */
 
 /*
   ========================================
@@ -161,20 +147,6 @@ a {
 a:hover {
 	color: #dfe2e5;
 }
-
-/* p a {
-	border-bottom: 1px solid #dfe2e5;
-} */
-
-/* .primary-header a,
-.primary-footer a {
-	color: #fff;
-}
-
-.primary-header a:hover,
-.primary-footer a:hover {
-	color: #648880;
-} */
 
 /*
   ========================================
